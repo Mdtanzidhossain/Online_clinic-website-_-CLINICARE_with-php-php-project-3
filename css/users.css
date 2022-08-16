@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.cards{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d3548;
+  overflow: hidden;
+  /*background-repeat: no-repeat;*/
+  font-family: 'Open Sans', sans-serif;
+
+}
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 100px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  
+
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+.card-image {
+  grid-area: image;
+  background: url("Coverimg/img1.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+
+.card-text p {
+  color: grey;
+  font-size:15px; 
+  font-weight: 300;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(255, 56, 56);
+}
+
+
+/*card hover*/
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+#Patient{
+
+  background: rgb(255, 56, 56);
+  border-color: rgb(255, 56, 56) ;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 120px;
+  padding-top: 30px;
+
+}
+
+#doctor{
+
+  background: rgb(125, 207, 255);
+  border-color: rgb(125, 207, 255) ;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 120px;
+  padding-top: 30px;
+
+}
+
+#admin{
+
+  background: rgb(92, 93, 94);
+  border-color: rgb(92, 93, 94) ;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 120px;
+  padding-top: 30px;
+
+}
+
+
+
+
+
+
+
+/*card2*/
+.card-image.card2 {
+  background: url("Coverimg/doctor.jpg");
+  background-size: cover;
+}
+
+.card-stats.card2 {
+  background: rgb(125, 207, 255);
+}
+
+
+
+
+
+
+
+
+/*card3*/
+.card-image.card3 {
+  background: url("Coverimg/admin.jpg");
+  background-size: cover;
+}
+
+.card-stats.card3 {
+  background: rgb(92, 93, 94);
+}
+
+
+
+
+
+
+
+
+
+
