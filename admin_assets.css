@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+
+  width: 1140px ;
+  margin: auto;
+  
+}
+
+body{
+
+  background-image: url(docimg/backgroundimg.jpeg);
+  background-size: cover;
+  
+}
+
+.row{
+
+  text-align: center;
+  padding-top: 100px;
+
+}
+
+
+.card:hover {
+  transform: scale(1.3);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
